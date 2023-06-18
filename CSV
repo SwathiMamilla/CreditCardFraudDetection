@@ -1,0 +1,11 @@
+transaction_id,amount,merchant,card_type,card_country,fraud_label
+1,100.23,XYZ Store,Credit,USA,0
+2,50.10,ABC Shop,Debit,USA,0
+3,200.00,XYZ Store,Credit,USA,1
+4,75.50,DEF Mart,Debit,USA,0
+5,150.75,XYZ Store,Credit,USA,0
+6,300.00,XYZ Store,Credit,USA,1
+7,60.20,ABC Shop,Debit,USA,0
+8,80.10,DEF Mart,Debit,USA,0
+9,500.25,XYZ Store,Credit,USA,1
+10,45.90,XYZ Store,Credit,USA,0
