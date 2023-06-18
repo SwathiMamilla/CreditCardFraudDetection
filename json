@@ -1,0 +1,84 @@
+{
+  "transactions": [
+    {
+      "transaction_id": 1,
+      "amount": 100.23,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 2,
+      "amount": 50.10,
+      "merchant": "ABC Shop",
+      "card_type": "Debit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 3,
+      "amount": 200.00,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 1
+    },
+    {
+      "transaction_id": 4,
+      "amount": 75.50,
+      "merchant": "DEF Mart",
+      "card_type": "Debit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 5,
+      "amount": 150.75,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 6,
+      "amount": 300.00,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 1
+    },
+    {
+      "transaction_id": 7,
+      "amount": 60.20,
+      "merchant": "ABC Shop",
+      "card_type": "Debit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 8,
+      "amount": 80.10,
+      "merchant": "DEF Mart",
+      "card_type": "Debit",
+      "card_country": "USA",
+      "fraud_label": 0
+    },
+    {
+      "transaction_id": 9,
+      "amount": 500.25,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 1
+    },
+    {
+      "transaction_id": 10,
+      "amount": 45.90,
+      "merchant": "XYZ Store",
+      "card_type": "Credit",
+      "card_country": "USA",
+      "fraud_label": 0
+    }
+  ]
+}
