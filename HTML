@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection Results</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fraud Detection Results</h1>
+
+    <h2>Summary Statistics</h2>
+    <p>Total Transactions: 1000</p>
+    <p>Fraudulent Transactions: 50</p>
+    <p>Accuracy: 0.92</p>
+    <p>Precision: 0.88</p>
+    <p>Recall: 0.95</p>
+    <p>F1-Score: 0.91</p>
+
+    <h2>Fraud Detection Table</h2>
+    <table>
+        <tr>
+            <th>Transaction ID</th>
+            <th>Amount</th>
+            <th>Merchant</th>
+            <th>Card Type</th>
+            <th>Card Country</th>
+            <th>Fraud Label</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>100.23</td>
+            <td>XYZ Store</td>
+            <td>Credit</td>
+            <td>USA</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>50.10</td>
+            <td>ABC Shop</td>
+            <td>Debit</td>
+            <td>USA</td>
+            <td>0</td>
+        </tr>
+        <!-- Add more rows for additional transactions -->
+    </table>
+</body>
+</html>
