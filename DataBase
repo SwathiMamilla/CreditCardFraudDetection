@@ -1,0 +1,47 @@
+import psycopg2
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+# Step 1: Data Retrieval from Database
+# Establish a connection to the PostgreSQL database
+conn = psycopg2.connect(host="localhost", database="your_database", user="your_username", password="your_password")
+
+# Create a cursor object to interact with the database
+cursor = conn.cursor()
+
+# Execute a query to retrieve the data from the database
+cursor.execute("SELECT * FROM fraud_data")
+
+# Fetch all rows from the executed query
+rows = cursor.fetchall()
+
+# Close the cursor and connection to the database
+cursor.close()
+conn.close()
+
+# Create a pandas DataFrame from the fetched rows
+data = pd.DataFrame(rows, columns=['feature1', 'feature2', 'fraud_label'])
+
+# Step 2: Data Preparation and Splitting (same as previous example)
+X = data.drop('fraud_label', axis=1)
+y = data['fraud_label']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Step 3: Model Training (same as previous example)
+clf = RandomForestClassifier()
+clf.fit(X_train, y_train)
+
+# Step 4: Model Evaluation (same as previous example)
+y_pred = clf.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+# Print the evaluation results
+print('Accuracy:', accuracy)
+print('Precision:', precision)
+print('Recall:', recall)
+print('F1-Score:', f1)
